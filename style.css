@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+    border: 1px solid #ececec;
+}
+
+.box-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 101px;
+}
+
+.container {
+<<<<<<< HEAD
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+=======
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+>>>>>>> master
+}
+
+.box-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo {
+<<<<<<< HEAD
+  display: flex;
+  align-items: center;
+  float: left;
+  color: #222222;
+  font-family: sans-serif;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0.68px;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #f16d7f;
+  font-weight: 400;
+}
+
+.logo-img {
+  margin-right: 10px;
+}
+
+.my_acc {
+width: 130px;
+height: 38px;
+background-color: #f16d7f;
+color: #ffffff;
+font-family: sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0.38px;
+=======
+    float: left;
+    /* Style for "BRAND" */
+    /*width: 93px;*/
+    /*height: 19px;*/
+    color: #222222;
+    font-family: sans-serif;
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.68px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #f16d7f;
+    font-weight: 400;
+}
+
+.my-acc {
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.38px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    height: 51px;
+    list-style-type: none;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: #222222;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 54px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 17px 6px;
+}
+
+.active-link {
+    border-bottom: 3px solid lightcoral;
+>>>>>>> master
+}
