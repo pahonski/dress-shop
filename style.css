@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .header {
     height: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
@@ -18,48 +12,328 @@
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
 .box-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  float: left;
-  color: #222222;
-  font-family: sans-serif;
-  font-size: 27px;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: 0.68px;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    /* float: left; */
+    color: #222222;
+    font-family: sans-serif;
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.68px;
+    text-decoration: none;
 }
 
 .logo span {
-  color: #f16d7f;
-  font-weight: 400;
+    color: #f16d7f;
+    font-weight: 400;
 }
 
 .logo-img {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
-.my_acc {
-width: 130px;
-height: 38px;
-background-color: #f16d7f;
-color: #ffffff;
-font-family: sans-serif;
-font-size: 15px;
-font-weight: 400;
-line-height: 32px;
-letter-spacing: 0.38px;
+.browse {
+    /* Style for "Rounded Re" */
+    width: 87px;
+    height: 38px;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #e6e6e6;
+    background-color: #cdcdcc;
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+    /* Style for "Browse" */
+    color: #222222;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    /* Text style for "B, rowse" */
+    letter-spacing: 0.35px;
+}
+
+.search-block {
+    margin-right: 375px;
+}
+
+.search {
+    /* Style for "Rounded Re" */
+    width: 280px;
+    height: 38px;
+    padding-left: 15px;
+    margin-left: -5px;
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    /* Style for "Search for" */
+    color: #a4a4a4;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    /* Text style for "S, earch f" */
+    letter-spacing: 0.35px;
+}
+
+.icon-box {
+    display: inline-block;
+    margin-left: -5px;
+    padding: 9px;
+    border: 1px solid #e8e8e8;
+}
+
+.icon-box .fa-search {
+    font-size: 14px;
+    color: #a4a4a4;
+}
+
+.basket {
+    /* Style for "Forma 1" */
+    width: 32px;
+    height: 29px;
+    background-image: url('img/basket.png');
+}
+
+.my-acc {
+    width: 130px;
+    height: 38px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.38px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    height: 51px;
+    list-style-type: none;
+}
+
+.nav li {
+    margin: 0 10px;
+    line-height: 54px;
+}
+
+.nav a {
+    /* Style for "Home" */
+    color: #222222;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 17px 7px;
+}
+
+.active-link {
+    border-bottom: 3px solid #ef5b70;
+}
+
+.promo {
+    /* Style for "Image fram" */
+    position: relative;
+    margin-bottom: 100px;
+    background-color: #e8e8e8;
+}
+
+.promo-block {
+    height: 665px;
+    background-image: url('img/slider-image.jpg');
+    background-size: 1474px;
+    background-position: -18px -53px;
+    background-repeat: no-repeat;
+}
+
+.promo-text {
+    margin-top: 225px;
+    padding-left: 19px;
+    position: absolute;
+    border-left: 12px solid #f16d7f;
+    color: #222222;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.promo-title {
+    font-size: 60px;
+    letter-spacing: 1.5px;
+}
+
+.promo-description {
+    font-size: 40px;
+}
+
+.promo-description-decorate {
+    color: #f16d7f;
+}
+
+.offers-left {
+    margin-right: 20px;
+}
+
+.offers {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.offer {
+    width: 560px;
+    height: 540px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.offer-button {
+    display: none;
+}
+
+.offer:hover {
+    /* box-shadow: 0 0 0 280px rgba(0, 0, 0, 0.33) inset; */
+    box-shadow: #444444 0 0 3px 5px;
+    opacity: .8;
+}
+
+.offer:hover>.offer-button {
+    display: block;
+}
+
+.offer-small {
+    height: 260px;
+}
+
+.offer-1 {
+    background-image: url('img/offer-men.jpg');
+}
+
+.offer-2 {
+    background-color: #DADAD2;
+    background-image: url('img/offer-accesories.jpg');
+    background-repeat: no-repeat;
+    background-position: 149px 0;
+}
+
+.offer-3 {
+    background-image: url('img/offer-women.jpg');
+}
+
+.offer-4 {
+    background-image: url('img/offer-children.jpg');
+}
+
+.offer-description {
+    position: absolute;
+    top: 40px;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.offer-body {
+    /* Style for "hOT dEAL F" */
+    color: #222222;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.45px;
+}
+
+.offer-title {
+    color: #f16d7f;
+    font-size: 30px;
+    letter-spacing: 0.75px;
+}
+
+.featured-header {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 54px;
+    /* Text style for "Fetured It" */
+    letter-spacing: 0.75px;
+}
+
+.featured-description {
+    /* Style for "Shop for i" */
+    margin-bottom: 60px;
+    text-align: center;
+    color: #9f9f9f;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 54px;
+    /* Text style for "S, hop for" */
+    letter-spacing: 0.35px;
+}
+
+.featured-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.item {
+    width: 263px;
+    height: 365px;
+}
+
+.item:hover {
+    background-color: #444444;
+    z-index: 150;
+    opacity: .5;
+    box-shadow: 0 0 0 280px rgba(0, 0, 0, 0.33) inset;
+}
+
+.item-image {
+    width: 263px;
+    height: 280px;
+    margin-bottom: 20px;
+    background: #000;
+}
+
+.item-image img {
+    width: 263px;
+    height: 280px;
+}
+
+.item-description {
+    /* Style for "Mango  Peo" */
+    margin-bottom: 15px;
+    padding-left: 13px;
+    color: #222222;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.item-price {
+    /* Style for "$52.00" */
+    padding-left: 13px;
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
